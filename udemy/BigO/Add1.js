@@ -6,4 +6,7 @@ function addUpTo(n){
   return total;
 }
 
-console.log(addUpTo(6));
+let t1 = performance.now();
+addUpTo(1000000000);
+let t2 = performance.now();
+console.log(`${(t2 - t1) / 1000}`);
